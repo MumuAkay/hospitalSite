@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+<!-- Navbar content (icon+title)-->
+{% block nav-content %}
+<i class="fas fa-user"></i>&nbsp;&nbsp; Üyeler
+{% endblock nav-content %}
+
+
+<!-- Button in navbar-->
+{% block btn-nav %}
+<a href="{% url 'logout' %}" class="btn btn-outline-danger btn-sm border-light text-light" id="btn-nav">Çıkış</a>
+{% endblock btn-nav %}
+
+
+<!-- Page Content -->
+{% block content %}
+<h1 class="text-danger text-center">Backend Page</h1>
+{% endblock content %} 
